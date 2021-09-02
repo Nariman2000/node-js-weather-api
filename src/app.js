@@ -74,7 +74,9 @@ app.get('/weather', (req, res) => {
         if (error) {
           return res.send({ error });
         }
+
         console.log(data);
+
         res.send({
           location,
           time: `${data.time}`,
