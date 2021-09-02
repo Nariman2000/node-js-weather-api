@@ -1,0 +1,103 @@
+* {
+  font-family: cursive;
+}
+
+body {
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  padding: 0 16px;
+  max-width: 800px;
+  margin: 13px auto;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 62px;
+  margin-bottom: 16px;
+}
+
+header {
+  margin-top: 16px;
+}
+
+footer {
+  color: #ccc;
+  border-top: 1px solid #eee;
+  margin-top: 16px;
+  padding: 10px 0;
+}
+
+.pic {
+  width: 370px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.menu {
+  padding: 5px;
+}
+.menu li {
+  list-style: none;
+  display: block;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.menu li a {
+  text-decoration: none;
+  color: gold;
+  border: 1px solid gold;
+  background-color: black;
+  border-radius: 8px;
+  padding: 9px 16px;
+  border: none;
+}
+
+p {
+  display: flex;
+  align-items: flex-end;
+}
+
+.error {
+  background-color: purple;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+
+  margin-top: 30px;
+}
+p {
+  margin-left: 8px;
+}
+
+form {
+  margin: 15px;
+}
+
+form input {
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  border: 2px solid #000;
+}
+
+button {
+  color: gold;
+  background-color: #000;
+
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
