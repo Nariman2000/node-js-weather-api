@@ -4,6 +4,7 @@ const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const msgOne = document.querySelector('#message-one');
 const msgTwo = document.querySelector('#message-two');
+const msgThree = document.querySelector('#message-three');
 
 fetch('https://puzzle.mead.io/puzzle').then(res => {
   res.json().then(data => {
@@ -20,6 +21,7 @@ weatherForm.addEventListener('submit', e => {
   // Loader
   msgOne.textContent = 'Loading ...';
   msgTwo.textContent = '';
+  msgThree.textContent = '';
 
   // Fetch the api for weather
   fetch(`http://localhost:8000/weather?address=${location}`).then(res => {
@@ -29,6 +31,7 @@ weatherForm.addEventListener('submit', e => {
       } else {
         msgOne.textContent = `Location: ${data.location}`;
         msgTwo.textContent = `${data.weather} temperature is ${data.temperature}`;
+        msgThree.textContent = `Time in ${location}: ${data.time}`;
       }
     });
   });
